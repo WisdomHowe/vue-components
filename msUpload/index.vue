@@ -1,9 +1,9 @@
 <template>
     <div class="ms-upload">
         <div class="box">
-            <input ref="file" type="file" name="picture" @change="uploadfile">
+            <input ref="file" type="file" @change="uploadfile">
             <div class="imgWrap" v-show="src !== ''" @click="showOpera">
-                <img :src="showSrc">
+                <img :src="showSrc" />
             </div>
             <div class="loading" v-show="isLoading"></div>
         </div>
@@ -18,7 +18,7 @@
         </div>
         <div class="larger" v-show="isMore" @click="hideZoomImg">
             <div class="largerWrap">
-                <img :src="showSrc" alt="">
+                <img :src="showSrc" alt="" />
             </div>
         </div>
     </div>
